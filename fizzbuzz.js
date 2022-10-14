@@ -1,9 +1,10 @@
 const FIZZ = 'fizz';
 const BUZZ = 'buzz';
+const FIZZBUZZ = 'fizzbuzz';
 
 function fizzbuzz(number) {
     if (this.isFizz(number) && this.isBuzz(number)) {
-        return 'fizzbuzz';
+        return FIZZBUZZ;
     } else if (this.isBuzz(number)) {
         return BUZZ;
     } else if (this.isFizz(number)) {
