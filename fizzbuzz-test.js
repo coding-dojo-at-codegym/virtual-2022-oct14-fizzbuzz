@@ -8,9 +8,18 @@ QUnit.module('fizzbuzz', function () {
 })
 
 QUnit.module('fizzbuzz', function () {
-    QUnit.test('text input 3 return fizz', function (assert) {
+    QUnit.test('test param plain 3 return fizz', function (assert) {
         const number = 3
         const expected = "fizz"
+        const actual = fizzbuzz(number)
+        assert.equal(expected, actual)
+    })
+})
+
+QUnit.module('fizzbuzz', function () {
+    QUnit.test('test param plain 5 return buzz', function (assert) {
+        const number = 5
+        const expected = "buzz"
         const actual = fizzbuzz(number)
         assert.equal(expected, actual)
     })
