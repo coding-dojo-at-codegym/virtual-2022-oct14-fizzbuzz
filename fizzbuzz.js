@@ -4,9 +4,7 @@ const BUZZ = 'buzz'
 function fizzbuzz (number) {
   if (this.isFizz(number)) {
     return FIZZ
-  }
-
-  if (this.isBuzz(number)) {
+  } else if (this.isBuzz(number)) {
     return BUZZ
   }
   return number
