@@ -11,7 +11,7 @@ function fizzbuzz (number) {
 }
 
 function isFizz (number) {
-  return number === 3
+  return number % 3 === 0
 }
 
 function isBuzz (number) {
