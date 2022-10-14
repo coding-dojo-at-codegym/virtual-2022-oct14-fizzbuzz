@@ -24,3 +24,13 @@ QUnit.module('fizzbuzz', function () {
         assert.equal(expected, actual)
     })
 })
+
+QUnit.module('fizzbuzz', function () {
+    QUnit.test('test param plain 6 return fizz', function (assert) {
+        const number = 6
+        const expected = "fizz"
+        const actual = fizzbuzz(number)
+        assert.equal(expected, actual)
+    })
+})
+
