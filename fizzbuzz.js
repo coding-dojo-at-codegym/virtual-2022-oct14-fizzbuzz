@@ -13,14 +13,18 @@ function fizzbuzz(number) {
     return number;
 }
 
+function isDivisible(number, divisibleBy) {
+    return number % divisibleBy === 0;
+}
+
 function isFizz(number) {
-    return number % 3 === 0;
+    return isDivisible(number, 3);
 }
 
 function isBuzz(number) {
-    return number % 5 === 0;
+    return isDivisible(number, 5);
 }
 
 function isFizzBuzz(number) {
-    return this.isFizz(number) && this.isBuzz(number);
+    return isFizz(number) && isBuzz(number);
 }
