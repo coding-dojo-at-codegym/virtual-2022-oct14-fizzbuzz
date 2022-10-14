@@ -15,5 +15,5 @@ function isFizz (number) {
 }
 
 function isBuzz (number) {
-  return number === 5
+  return number % 5 === 0
 }
