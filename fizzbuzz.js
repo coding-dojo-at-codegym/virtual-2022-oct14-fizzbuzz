@@ -3,11 +3,11 @@ const BUZZ = 'buzz';
 const FIZZBUZZ = 'fizzbuzz';
 
 function fizzbuzz(number) {
-    if (this.isFizz(number) && this.isBuzz(number)) {
+    if (isFizzBuzz(number)) {
         return FIZZBUZZ;
-    } else if (this.isBuzz(number)) {
+    } else if (isBuzz(number)) {
         return BUZZ;
-    } else if (this.isFizz(number)) {
+    } else if (isFizz(number)) {
         return FIZZ;
     }
     return number;
@@ -19,4 +19,8 @@ function isFizz(number) {
 
 function isBuzz(number) {
     return number % 5 === 0;
+}
+
+function isFizzBuzz(number) {
+    return this.isFizz(number) && this.isBuzz(number);
 }
