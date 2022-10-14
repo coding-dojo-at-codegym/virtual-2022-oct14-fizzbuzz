@@ -1,6 +1,12 @@
+const FIZZ = 'fizz'
+
 function fizzbuzz (number) {
-  if (number === 3) {
-    return 'fizz'
+  if (this.isFizz(number)) {
+    return FIZZ
   }
-  return 1
+  return number
+}
+
+function isFizz (number) {
+  return number === 3
 }
